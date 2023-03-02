@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria - Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/d22e2562a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/my_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front End Web Designer and Developer</p>
+                <h1>Hi, I'm <span>Victoria</span> <br> Wishavura From Kenya </h1>
+            </div>
+        </div>
+    </div>
+    <!------about---->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/vicky.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Victoria Wishavura. I am an IT student at Kenyatta University with special interest softwa
+                        development. I am a front end software developer with vast knowledge in HTML, CSS and JavaScript Programming Languagess
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experince')">Experince</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                        <p class="tab-links"  onclick="opentab('tools')">Tools</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Interactive Websites and Web Application Development</li>
+                            <li><span>App Development</span><br>Building cross platform Mobile and Desktop Applications (Android/iOS Apps)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experince">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Data Science Community Lead at Google Developer Student Club - 
+                            Kenyatta University, GDSC-KU. <br>
+                            Secretary General of the Engineering Student Association - Kenyatta University, ESA-KU</li>
+                            <li><span>2021 - 2022</span><br>Data Science and Machine 
+                            Learning with Python - National Research Fund</li>
+                            <li><span>2018 - 2021</span><br>Library Captain Agoro Sare High School</li>
+                            <li><span>2016 - 2017</span><br>School Captain Bondo Primary School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Barchelor of Information Technology - Kenyatta University.
+                            <li><span>2021 - 2022</span><br>Data Science and Machine Learning with Python - National Research Fund</li>
+                            <li><span>2018 - 2021</span><br>Agoro Sare High School</li>
+                            <li><span>2008 - 2016</span><br>Bondo Primary School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="tools">
+                          <ul>
+                            <li><span>Front End</span><br>
+                                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Angular</li><li>Flutter</li><li>React Native</li>
+                            </li>
+                            
+                         </ul>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------Services----->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Designing high performance websites with the latest Technology
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX done perfectly with canva and figma
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Interactive and cross platform mobile Applications using Flutter
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-----Portfolio----->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Hate Check App</h3>
+                        <p>This application, available on PlayStore, is developped by DaltTech and is used to detect hate 
+                            speech from a text, audio and video. It uses a pretrained machine learning model to get the job
+                            done. It is unique in a way that it is able to detect hate speech from local African dialect.
+                        </p>
+                            <a href="https://github.com/Daltone-Otieno"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Breast Cancer Detection Model</h3>
+                        <p>The model is used to detect breast cancer at it's initial stages. It is able to whether the cell is 
+                            malignant or ben
+                        </p>
+                            <a href="https://github.com/Daltone-Otieno"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Mavuno App </h3>
+                        <p>The app is developed to connect farmers to the market and to other government services</p>
+                            <a href="https://github.com/Daltone-Otieno"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>  
+                </div>
+            </div>
+
+            <a href="https://github.com/Daltone-Otieno" class="btn">See More</a>
+        </div>
+    </div>
+<!----Contact Us----->
+    <div id="contact">
+        <div class="container">
+<div class="row">
+    <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p> <i class="fa-solid fa-paper-plane"></i>victoriawishavura@gmail.com</p>
+        <p> <i class="fa-solid fa-phone"></i>0793779573</p>
+        <div class="social-icons">
+            <a href="https://twitter.com/dalton_o_n"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.facebook.com/mcgiljovian.dalton"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/dalton_o_n"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/daltone-otieno-aa6357253/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Daltone-Otieno"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+    </div>
+    <div class="contact-right">    
+        <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+    </form>
+    <span id="msg"></span>
+</div>
+
+<footer>
+        <section class="footer-container">
+            <section class="footer-left">
+                <h1>Quick links</h1><br>
+                <a href="#header">Home</a> <br><br>
+                <a href="#about">About Me</a><br><br>
+                <a href="#services">Services</a><br><br>
+                <a href="#portfolio">Portfolio</a><br><br>
+                <a href="#contact">Contact me</a><br><br><br>
+
+            </section>
+                     <section class="footer-middle">
+                <h1>Copyright</h1> <br>
+                <p>copyright &#169 DaltTech 2023.  <br>
+                    Designed and developed by Victoria Wishavura
+                </p>
+            </section>
+            <section class="footer-right">
+                <h1>Social Links</h1><br>
+                <a href="https://twitter.com/dalton_o_n">Twitter</a><br><br>
+                <a href="https://www.linkedin.com/in/daltone-otieno-aa6357253/">LinkedIn</a> <br><br>
+                <a href="https://www.instagram.com/dalton_o_n/?next=%2F">Instagram</a><br><br>
+                <a href="https://www.facebook.com/mcgiljovian.dalton">Facebook</a><br><br>
+                <a href="https://github.com/Daltone-Otieno">Github</a>
+            </section>
+  
+        </section>
+    </footer>
+
+     
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbys2GktruNeZ6kQS2g7DoNXZ6DSnqZgmFjYS68XcOpJjC4fUeNR3b4fMOsQ7lLSkGrhLg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
